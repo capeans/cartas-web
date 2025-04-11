@@ -48,8 +48,14 @@
         <option value="naruto">Naruto</option>
         <option value="otros">Otros</option>
       </select>
-      <label>Precio máx: <span id="precio-valor">100</span> €</label>
-      <input type="range" id="filtro-precio" min="0" max="100" value="100">
+      <label>Stock disponible:</label>
+<select id="filtro-stock">
+  <option value="">Todos</option>
+  <option value="disponible">Disponible</option>
+  <option value="agotado">Agotado</option>
+</select>
+<label>Precio máx: <span id="precio-valor">1000</span> €</label>
+      <input type="range" id="filtro-precio" min="0" max="1000" value="100">
     </aside>
     <section style="flex: 1;">
       <h1>Cajas Coleccionables</h1>

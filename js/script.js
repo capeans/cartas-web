@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const filtroCategoria = document.getElementById('filtro-categoria');
       const filtroIdioma = document.getElementById('filtro-idioma');
       const filtroPrecio = document.getElementById('filtro-precio');
+      const filtroStock = document.getElementById('filtro-stock');
       const precioValor = document.getElementById('precio-valor');
 
       let productos = data.filter(p => p.tipo === 'caja');
@@ -39,6 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cat) filtrados = filtrados.filter(p => p.categoria.toLowerCase().includes(cat));
         if (idioma) filtrados = filtrados.filter(p => (p.idioma || '').toLowerCase().includes(idioma));
         filtrados = filtrados.filter(p => parseFloat(p.precio) <= max);
+        if (filtroStock?.value === "disponible") {
+          filtrados = filtrados.filter(p => p.stock > 0);
+        } else if (filtroStock?.value === "agotado") {
+          filtrados = filtrados.filter(p => p.stock <= 0);
+        }
 
         render(filtrados);
       };
@@ -48,6 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
       filtroCategoria?.addEventListener('change', aplicarFiltros);
       filtroIdioma?.addEventListener('change', aplicarFiltros);
       filtroPrecio?.addEventListener('input', () => {
+        aplicarFiltros();
+      });
+      filtroStock?.addEventListener('change', aplicarFiltros);
         precioValor.textContent = filtroPrecio.value;
         aplicarFiltros();
       });
