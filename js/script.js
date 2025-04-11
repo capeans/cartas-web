@@ -6,12 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const esCajas = pagina === 'cajas';
       const esCartas = pagina === 'cartas';
       const contenedor = document.getElementById(esCajas ? 'productos-cajas' : 'productos-cartas');
-      const filtro = document.getElementById('buscador');
-      const urlParams = new URLSearchParams(window.location.search);
-      const categoriaFiltro = urlParams.get('categoria');
 
-      const render = (productos) => {
-        contenedor.innerHTML = productos.map(p => `
+      const filtroNombre = document.getElementById('filtro-nombre');
+      const filtroCategoria = document.getElementById('filtro-categoria');
+      const filtroPrecio = document.getElementById('filtro-precio');
+      const precioValor = document.getElementById('precio-valor');
+
+      let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
+
+      const render = (lista) => {
+        contenedor.innerHTML = lista.map(p => `
           <div class="producto" onclick="window.open('${p.enlace}', '_blank')">
             <img src="${p.imagen}" alt="${p.nombre}">
             <h3>${p.nombre}</h3>
@@ -22,20 +26,26 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
       };
 
-      let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
+      const aplicarFiltros = () => {
+        let filtrados = productos;
+        const q = filtroNombre?.value.toLowerCase() || "";
+        const cat = filtroCategoria?.value.toLowerCase() || "";
+        const max = parseFloat(filtroPrecio?.value) || 100;
 
-      if (categoriaFiltro) {
-        productos = productos.filter(p => p.categoria.toLowerCase().includes(categoriaFiltro.toLowerCase()));
-      }
+        if (q) filtrados = filtrados.filter(p => p.nombre.toLowerCase().includes(q));
+        if (cat) filtrados = filtrados.filter(p => p.categoria.toLowerCase().includes(cat));
+        filtrados = filtrados.filter(p => parseFloat(p.precio) <= max);
+
+        render(filtrados);
+      };
 
       render(productos);
 
-      if (filtro) {
-        filtro.addEventListener('input', e => {
-          const q = e.target.value.toLowerCase();
-          const filtrados = productos.filter(p => p.nombre.toLowerCase().includes(q) || p.categoria.toLowerCase().includes(q));
-          render(filtrados);
-        });
-      }
+      filtroNombre?.addEventListener('input', aplicarFiltros);
+      filtroCategoria?.addEventListener('change', aplicarFiltros);
+      filtroPrecio?.addEventListener('input', () => {
+        precioValor.textContent = filtroPrecio.value;
+        aplicarFiltros();
+      });
     });
 });

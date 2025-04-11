@@ -8,7 +8,7 @@
 </head>
 <body data-page="cajas">
   <header>
-    <img src="img/logo.jpg" alt="Uzutcg Logo">
+    <img src="img/logo.jpg" alt="Uzutcg Logo" style="height:40px;">
     <nav>
       <a href="index.html">Inicio</a>
       <a href="cajas.html">Cajas</a>
@@ -17,10 +17,28 @@
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
-  <main>
-    <h1>Cajas Coleccionables</h1>
-    <input type="text" id="buscador" placeholder="Buscar por nombre o categoría...">
-    <div id="productos-cajas" class="grid"></div>
+  <main style="display: flex; gap: 2em;">
+    <aside style="width: 250px;">
+      <h3>Filtrar por:</h3>
+      <label>Nombre:</label>
+      <input type="text" id="filtro-nombre" placeholder="Nombre...">
+      <label>Categoría:</label>
+      <select id="filtro-categoria">
+        <option value="">Todas</option>
+        <option value="pokemon">Pokémon</option>
+        <option value="one piece">One Piece</option>
+        <option value="digimon">Digimon</option>
+        <option value="dragon ball">Dragon Ball</option>
+        <option value="naruto">Naruto</option>
+        <option value="otros">Otros</option>
+      </select>
+      <label>Precio máx: <span id="precio-valor">100</span> €</label>
+      <input type="range" id="filtro-precio" min="0" max="100" value="100">
+    </aside>
+    <section style="flex: 1;">
+      <h1>Cajas Coleccionables</h1>
+      <div id="productos-cajas" class="grid"></div>
+    </section>
   </main>
 </body>
 </html>
