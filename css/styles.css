@@ -139,3 +139,36 @@ footer {
 .producto .modo-compra input[type="radio"] {
   accent-color: #111;
 }
+
+aside {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  padding: 1em;
+  font-size: 0.95em;
+}
+aside label, aside select, aside input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75em;
+}
+aside h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+.producto .modo-compra {
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.producto .modo-compra label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
