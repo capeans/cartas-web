@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const contenedor = document.getElementById('productos-cajas');
       const filtroNombre = document.getElementById('filtro-nombre');
       const filtroCategoria = document.getElementById('filtro-categoria');
+      const filtroIdioma = document.getElementById('filtro-idioma');
       const filtroPrecio = document.getElementById('filtro-precio');
       const precioValor = document.getElementById('precio-valor');
 
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="${p.imagen}" alt="${p.nombre}" onclick="mostrarImagen('${p.imagen}')">
             <h3>${p.nombre}</h3>
             <p>Categoría: ${p.categoria}</p>
+            <p>Idioma: ${p.idioma || 'Desconocido'}</p>
             <p>Precio: ${p.precio}€</p>
             <p>Stock: ${p.stock}</p>
             <div>
@@ -30,10 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let filtrados = productos;
         const q = filtroNombre?.value.toLowerCase() || "";
         const cat = filtroCategoria?.value.toLowerCase() || "";
+        const idioma = filtroIdioma?.value.toLowerCase() || "";
         const max = parseFloat(filtroPrecio?.value) || 100;
 
         if (q) filtrados = filtrados.filter(p => p.nombre.toLowerCase().includes(q));
         if (cat) filtrados = filtrados.filter(p => p.categoria.toLowerCase().includes(cat));
+        if (idioma) filtrados = filtrados.filter(p => (p.idioma || '').toLowerCase().includes(idioma));
         filtrados = filtrados.filter(p => parseFloat(p.precio) <= max);
 
         render(filtrados);
@@ -42,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       render(productos);
       filtroNombre?.addEventListener('input', aplicarFiltros);
       filtroCategoria?.addEventListener('change', aplicarFiltros);
+      filtroIdioma?.addEventListener('change', aplicarFiltros);
       filtroPrecio?.addEventListener('input', () => {
         precioValor.textContent = filtroPrecio.value;
         aplicarFiltros();
