@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const esCartas = pagina === 'cartas';
       const contenedor = document.getElementById(esCajas ? 'productos-cajas' : 'productos-cartas');
       const filtro = document.getElementById('buscador');
+      const urlParams = new URLSearchParams(window.location.search);
+      const categoriaFiltro = urlParams.get('categoria');
 
       const render = (productos) => {
         contenedor.innerHTML = productos.map(p => `
@@ -21,6 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
+
+      if (categoriaFiltro) {
+        productos = productos.filter(p => p.categoria.toLowerCase().includes(categoriaFiltro.toLowerCase()));
+      }
+
       render(productos);
 
       if (filtro) {
