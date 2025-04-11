@@ -70,5 +70,113 @@
     "stock": 2,
     "imagen": "https://www.dbs-cardgame.com/images/cardlist/card/BT9-105_SR.png",
     "enlace": "https://www.cardmarket.com/es/DragonBall/Products/Singles/BT09/Goku-Ultra-Instinct"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 1",
+    "categoria": "Digimon",
+    "precio": 31.5,
+    "stock": 11,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Ingl\u00e9s"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 2",
+    "categoria": "Pok\u00e9mon",
+    "precio": 33.0,
+    "stock": 12,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Ingl\u00e9s"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 3",
+    "categoria": "Digimon",
+    "precio": 34.5,
+    "stock": 13,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Espa\u00f1ol"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 4",
+    "categoria": "Pok\u00e9mon",
+    "precio": 36.0,
+    "stock": 14,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Ingl\u00e9s"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 5",
+    "categoria": "Digimon",
+    "precio": 37.5,
+    "stock": 15,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Ingl\u00e9s"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 6",
+    "categoria": "Pok\u00e9mon",
+    "precio": 39.0,
+    "stock": 16,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Espa\u00f1ol"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 7",
+    "categoria": "Digimon",
+    "precio": 40.5,
+    "stock": 17,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Ingl\u00e9s"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 8",
+    "categoria": "Pok\u00e9mon",
+    "precio": 42.0,
+    "stock": 18,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Ingl\u00e9s"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 9",
+    "categoria": "Digimon",
+    "precio": 43.5,
+    "stock": 19,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Espa\u00f1ol"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 10",
+    "categoria": "Pok\u00e9mon",
+    "precio": 45.0,
+    "stock": 20,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Ingl\u00e9s"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 11",
+    "categoria": "Digimon",
+    "precio": 46.5,
+    "stock": 21,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Ingl\u00e9s"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Especial 12",
+    "categoria": "Pok\u00e9mon",
+    "precio": 48.0,
+    "stock": 22,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png",
+    "idioma": "Espa\u00f1ol"
   }
 ]

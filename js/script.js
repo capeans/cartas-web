@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Idioma: ${p.idioma || 'Desconocido'}</p>
             <p>Precio: ${p.precio}€</p>
             <p>Stock: ${p.stock}</p>
-            <div>
+            <div class="modo-compra">
               <label><input type="radio" name="modo-${p.nombre}" value="sellada" checked> Sellada</label>
               <label><input type="radio" name="modo-${p.nombre}" value="directo"> Abrir en directo</label>
             </div>
