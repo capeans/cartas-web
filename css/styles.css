@@ -1,37 +1,90 @@
+
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #f4f4f4;
 }
 header {
-  background-color: #222;
+  background-color: #111;
   color: white;
-  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+header img {
+  height: 50px;
 }
 nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   color: white;
   text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #f0b400;
 }
 main {
-  padding: 1em;
+  padding: 2em;
+}
+h1, h2 {
+  color: #222;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5em;
 }
 .producto {
-  border: 1px solid #ccc;
-  padding: 1em;
-  margin: 1em 0;
+  border: 1px solid #ddd;
   background: white;
-  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+}
+.producto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 .producto img {
-  max-width: 200px;
-  display: block;
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 input, textarea {
-  display: block;
-  margin: 10px 0;
-  padding: 0.5em;
   width: 100%;
   max-width: 500px;
+  padding: 0.75em;
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  padding: 0.75em 1.5em;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #f0b400;
+}
+footer {
+  text-align: center;
+  padding: 2em;
+  background: #222;
+  color: white;
+  margin-top: 3em;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.contact-info strong {
+  font-weight: bold;
 }
