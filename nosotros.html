@@ -5,27 +5,34 @@
   <title>Sobre Nosotros - Uzutcg</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    .nosotros-paint-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2em;
-      margin-top: 2em;
+    .fila {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 1.5em;
     }
-    .nosotros-paint-grid > div {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 1.5em;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    .celda {
+      width: 50%;
+      padding: 1em;
+      box-sizing: border-box;
+      font-size: 0.95em;
     }
-    .nosotros-paint-grid img {
-      max-width: 100%;
+    .celda img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
       border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      .celda {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="img/logo.jpg" alt="Uzutcg Logo" style="height:40px;">
+    <img src="img/logo.jpg" alt="Uzutcg Logo" style="height:30px;">
     <nav>
       <a href="index.html">Inicio</a>
       <a href="cajas.html">Cajas</a>
@@ -34,28 +41,32 @@
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
-  <main style="max-width: 1000px; margin: auto; padding: 2em;">
-    <h1>Sobre Nosotros</h1>
-    <div class="nosotros-paint-grid">
-      <div>
-        <h2>Uzutcg</h2>
+  <main style="max-width: 100%; margin: auto; padding: 1em;">
+    <h1 style="font-size:1.5em;">Sobre Nosotros</h1>
+
+    <div class="fila">
+      <div class="celda">
+        <h2 style="font-size:1.1em;">Uzutcg</h2>
         <p>Logo y nombre de la empresa</p>
         <img src="img/logo.jpg" alt="Logo Uzutcg">
       </div>
-      <div>
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos una empresa dedicada a la venta de cajas y cartas coleccionables de juegos como Pokémon, One Piece, Digimon, Dragon Ball, Naruto y más.</p>
+      <div class="celda">
+        <h2 style="font-size:1.1em;">¿Quiénes somos?</h2>
+        <p>Empresa dedicada a la venta de cajas y cartas coleccionables de Pokémon, One Piece, Digimon, Dragon Ball, Naruto y más.</p>
       </div>
-      <div>
-        <h2>Streaming y Eventos</h2>
-        <p>También estamos en redes sociales, hacemos streaming abriendo cartas y cajas, organizamos sorteos y eventos para nuestros seguidores.</p>
+    </div>
+
+    <div class="fila">
+      <div class="celda">
+        <h2 style="font-size:1.1em;">Redes, Sorteos y Streaming</h2>
+        <p>Participamos activamente en redes sociales, hacemos streaming en directo abriendo cartas y cajas, sorteos para nuestra comunidad y más eventos coleccionables.</p>
       </div>
-      <div>
-        <img src="img/banner.jpg" alt="Cartas y cajas">
+      <div class="celda">
+        <img src="img/banner.jpg" alt="Cartas coleccionables">
       </div>
     </div>
   </main>
-  <footer>
+  <footer style="font-size: 0.85em; text-align:center; padding: 1em;">
     © 2025 Uzutcg - Todos los derechos reservados
   </footer>
 </body>

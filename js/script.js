@@ -2,26 +2,26 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data/productos.json')
     .then(res => res.json())
     .then(data => {
-      const pagina = document.body.dataset.page;
-      const esCajas = pagina === 'cajas';
-      const esCartas = pagina === 'cartas';
-      const contenedor = document.getElementById(esCajas ? 'productos-cajas' : 'productos-cartas');
-
+      const contenedor = document.getElementById('productos-cajas');
       const filtroNombre = document.getElementById('filtro-nombre');
       const filtroCategoria = document.getElementById('filtro-categoria');
       const filtroPrecio = document.getElementById('filtro-precio');
       const precioValor = document.getElementById('precio-valor');
 
-      let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
+      let productos = data.filter(p => p.tipo === 'caja');
 
       const render = (lista) => {
         contenedor.innerHTML = lista.map(p => `
-          <div class="producto" onclick="window.open('${p.enlace}', '_blank')">
-            <img src="${p.imagen}" alt="${p.nombre}">
+          <div class="producto">
+            <img src="${p.imagen}" alt="${p.nombre}" onclick="mostrarImagen('${p.imagen}')">
             <h3>${p.nombre}</h3>
             <p>Categoría: ${p.categoria}</p>
             <p>Precio: ${p.precio}€</p>
             <p>Stock: ${p.stock}</p>
+            <div>
+              <label><input type="radio" name="modo-${p.nombre}" value="sellada" checked> Sellada</label>
+              <label><input type="radio" name="modo-${p.nombre}" value="directo"> Abrir en directo</label>
+            </div>
           </div>
         `).join('');
       };
@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       render(productos);
-
       filtroNombre?.addEventListener('input', aplicarFiltros);
       filtroCategoria?.addEventListener('change', aplicarFiltros);
       filtroPrecio?.addEventListener('input', () => {
@@ -49,3 +48,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 });
+
+function mostrarImagen(src) {
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+  overlay.style.width = '100vw';
+  overlay.style.height = '100vh';
+  overlay.style.background = 'rgba(0,0,0,0.8)';
+  overlay.style.display = 'flex';
+  overlay.style.alignItems = 'center';
+  overlay.style.justifyContent = 'center';
+  overlay.style.zIndex = 1000;
+  overlay.innerHTML = `<img src="${src}" style="max-width:90vw; max-height:90vh; border-radius:8px;">`;
+  overlay.onclick = () => document.body.removeChild(overlay);
+  document.body.appendChild(overlay);
+}
