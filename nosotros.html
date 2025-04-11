@@ -2,12 +2,30 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Nosotros - Uzutcg</title>
+  <title>Sobre Nosotros - Uzutcg</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .nosotros-paint-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      margin-top: 2em;
+    }
+    .nosotros-paint-grid > div {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.5em;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .nosotros-paint-grid img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="img/logo.jpg" alt="Uzutcg Logo">
+    <img src="img/logo.jpg" alt="Uzutcg Logo" style="height:40px;">
     <nav>
       <a href="index.html">Inicio</a>
       <a href="cajas.html">Cajas</a>
@@ -16,9 +34,29 @@
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
-  <main>
+  <main style="max-width: 1000px; margin: auto; padding: 2em;">
     <h1>Sobre Nosotros</h1>
-    <p>Somos Uzutcg, una tienda dedicada a ofrecer los mejores productos de cartas coleccionables. Nuestra pasión por los juegos y el coleccionismo nos impulsa a traerte las mejores selecciones de Pokémon, One Piece, Digimon y Dragon Ball.</p>
+    <div class="nosotros-paint-grid">
+      <div>
+        <h2>Uzutcg</h2>
+        <p>Logo y nombre de la empresa</p>
+        <img src="img/logo.jpg" alt="Logo Uzutcg">
+      </div>
+      <div>
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una empresa dedicada a la venta de cajas y cartas coleccionables de juegos como Pokémon, One Piece, Digimon, Dragon Ball, Naruto y más.</p>
+      </div>
+      <div>
+        <h2>Streaming y Eventos</h2>
+        <p>También estamos en redes sociales, hacemos streaming abriendo cartas y cajas, organizamos sorteos y eventos para nuestros seguidores.</p>
+      </div>
+      <div>
+        <img src="img/banner.jpg" alt="Cartas y cajas">
+      </div>
+    </div>
   </main>
+  <footer>
+    © 2025 Uzutcg - Todos los derechos reservados
+  </footer>
 </body>
 </html>
