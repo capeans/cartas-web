@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>UZUTCG - Cartas Coleccionables</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo.jpg" alt="Uzutcg Logo" style="height:40px;">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="cajas.html">Cajas</a>
+      <a href="cartas.html">Cartas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section style="display:flex; flex-wrap:wrap; gap:2em; align-items:center;">
+      <div style="flex:1;">
+        <h1>Bienvenido a UZUTCG</h1>
+        <p>Explora el mundo de los juegos de cartas coleccionables con nuestra selección de Pokémon, One Piece, Digimon, Naruto y más.</p>
+        <a href="contacto.html"><button>Contactar con nosotros</button></a>
+      </div>
+      <div style="flex:1;">
+        <img src="img/banner.jpg" alt="Banner Uzutcg" style="width:100%; border-radius:10px;">
+      </div>
+    </section>
+    <section>
+      <h2 style="margin-top:2em;">Explora por categoría</h2>
+      <div class="grid-categorias">
+        
+    <div class="category-card" onclick="window.location.href='cajas.html?categoria=pokemon'">
+      <img src="img/pokemon.jpg" alt="pokemon">
+      <span>Pokemon</span>
+    </div>
+    
+    <div class="category-card" onclick="window.location.href='cajas.html?categoria=onepiece'">
+      <img src="img/onepiece.jpg" alt="onepiece">
+      <span>Onepiece</span>
+    </div>
+    
+    <div class="category-card" onclick="window.location.href='cajas.html?categoria=naruto'">
+      <img src="img/naruto.jpg" alt="naruto">
+      <span>Naruto</span>
+    </div>
+    
+    <div class="category-card" onclick="window.location.href='cajas.html?categoria=digimon'">
+      <img src="img/digimon.jpg" alt="digimon">
+      <span>Digimon</span>
+    </div>
+    
+    <div class="category-card" onclick="window.location.href='cajas.html?categoria=dragonball'">
+      <img src="img/dragonball.jpg" alt="dragonball">
+      <span>Dragonball</span>
+    </div>
+    
+    <div class="category-card" onclick="window.location.href='cajas.html?categoria=otros'">
+      <img src="img/otros.jpg" alt="otros">
+      <span>Otros</span>
+    </div>
+    
+      </div>
+    </section>
+  </main>
+  <footer>
+    © 2025 Uzutcg - Todos los derechos reservados
+  </footer>
+</body>
+</html>
