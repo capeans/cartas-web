@@ -1,218 +1,218 @@
 [
   {
     "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 1",
+    "nombre": "Caja Coleccionable 1",
     "categoria": "Pok\u00e9mon",
-    "precio": 30,
-    "stock": 5,
     "idioma": "Espa\u00f1ol",
-    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
-  },
-  {
-    "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 2",
-    "categoria": "One Piece",
-    "precio": 35,
-    "stock": 7,
-    "idioma": "Ingl\u00e9s",
-    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
-  },
-  {
-    "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 3",
-    "categoria": "Digimon",
-    "precio": 40,
-    "stock": 9,
-    "idioma": "Japon\u00e9s",
-    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
-  },
-  {
-    "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 4",
-    "categoria": "Dragon Ball",
-    "precio": 45,
-    "stock": 5,
-    "idioma": "Espa\u00f1ol",
-    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
-  },
-  {
-    "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 5",
-    "categoria": "Pok\u00e9mon",
     "precio": 50,
-    "stock": 7,
-    "idioma": "Ingl\u00e9s",
+    "stock": 1,
     "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
   },
   {
     "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 6",
+    "nombre": "Caja Coleccionable 2",
     "categoria": "One Piece",
-    "precio": 55,
-    "stock": 9,
-    "idioma": "Japon\u00e9s",
-    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
-  },
-  {
-    "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 7",
-    "categoria": "Digimon",
+    "idioma": "Ingl\u00e9s",
     "precio": 60,
-    "stock": 5,
-    "idioma": "Espa\u00f1ol",
+    "stock": 3,
     "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
   },
   {
     "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 8",
-    "categoria": "Dragon Ball",
-    "precio": 65,
-    "stock": 7,
-    "idioma": "Ingl\u00e9s",
-    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
-  },
-  {
-    "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 9",
-    "categoria": "Pok\u00e9mon",
-    "precio": 70,
-    "stock": 9,
-    "idioma": "Japon\u00e9s",
-    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
-  },
-  {
-    "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 10",
-    "categoria": "One Piece",
-    "precio": 75,
-    "stock": 5,
-    "idioma": "Espa\u00f1ol",
-    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
-  },
-  {
-    "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 11",
+    "nombre": "Caja Coleccionable 3",
     "categoria": "Digimon",
+    "idioma": "Japon\u00e9s",
+    "precio": 70,
+    "stock": 5,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Coleccionable 4",
+    "categoria": "Dragon Ball",
+    "idioma": "Espa\u00f1ol",
     "precio": 80,
     "stock": 7,
-    "idioma": "Ingl\u00e9s",
     "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
   },
   {
     "tipo": "caja",
-    "nombre": "Caja Colecci\u00f3n 12",
-    "categoria": "Dragon Ball",
-    "precio": 85,
-    "stock": 9,
+    "nombre": "Caja Coleccionable 5",
+    "categoria": "Pok\u00e9mon",
+    "idioma": "Ingl\u00e9s",
+    "precio": 90,
+    "stock": 1,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Coleccionable 6",
+    "categoria": "One Piece",
     "idioma": "Japon\u00e9s",
+    "precio": 100,
+    "stock": 3,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Coleccionable 7",
+    "categoria": "Digimon",
+    "idioma": "Espa\u00f1ol",
+    "precio": 110,
+    "stock": 5,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Coleccionable 8",
+    "categoria": "Dragon Ball",
+    "idioma": "Ingl\u00e9s",
+    "precio": 120,
+    "stock": 7,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Coleccionable 9",
+    "categoria": "Pok\u00e9mon",
+    "idioma": "Japon\u00e9s",
+    "precio": 130,
+    "stock": 1,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Coleccionable 10",
+    "categoria": "One Piece",
+    "idioma": "Espa\u00f1ol",
+    "precio": 140,
+    "stock": 3,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Coleccionable 11",
+    "categoria": "Digimon",
+    "idioma": "Ingl\u00e9s",
+    "precio": 150,
+    "stock": 5,
+    "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
+  },
+  {
+    "tipo": "caja",
+    "nombre": "Caja Coleccionable 12",
+    "categoria": "Dragon Ball",
+    "idioma": "Japon\u00e9s",
+    "precio": 160,
+    "stock": 7,
     "imagen": "https://images.pokemontcg.io/base1/1_hires.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 1",
+    "nombre": "Carta Brillante 1",
     "categoria": "Pok\u00e9mon",
-    "precio": 5.0,
-    "stock": 2,
     "idioma": "Espa\u00f1ol",
+    "precio": 2,
+    "stock": 5,
     "imagen": "https://images.pokemontcg.io/base1/4_hires.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 2",
+    "nombre": "Carta Brillante 2",
     "categoria": "One Piece",
-    "precio": 8.5,
-    "stock": 3,
     "idioma": "Ingl\u00e9s",
+    "precio": 5,
+    "stock": 6,
     "imagen": "https://images.onepiece-cardgame.dev/cards/OP01-025/thumbnail.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 3",
+    "nombre": "Carta Brillante 3",
     "categoria": "Digimon",
-    "precio": 12.0,
-    "stock": 4,
     "idioma": "Japon\u00e9s",
+    "precio": 8,
+    "stock": 7,
     "imagen": "https://static.wikia.nocookie.net/digimon-card/images/5/5c/P-001.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 4",
+    "nombre": "Carta Brillante 4",
     "categoria": "Dragon Ball",
-    "precio": 15.5,
-    "stock": 5,
     "idioma": "Espa\u00f1ol",
+    "precio": 11,
+    "stock": 8,
     "imagen": "https://www.dbs-cardgame.com/images/cardlist/card/BT9-105_SR.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 5",
+    "nombre": "Carta Brillante 5",
     "categoria": "Pok\u00e9mon",
-    "precio": 19.0,
-    "stock": 6,
     "idioma": "Ingl\u00e9s",
+    "precio": 14,
+    "stock": 9,
     "imagen": "https://images.pokemontcg.io/base1/4_hires.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 6",
+    "nombre": "Carta Brillante 6",
     "categoria": "One Piece",
-    "precio": 22.5,
-    "stock": 2,
     "idioma": "Japon\u00e9s",
+    "precio": 17,
+    "stock": 10,
     "imagen": "https://images.onepiece-cardgame.dev/cards/OP01-025/thumbnail.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 7",
+    "nombre": "Carta Brillante 7",
     "categoria": "Digimon",
-    "precio": 26.0,
-    "stock": 3,
     "idioma": "Espa\u00f1ol",
+    "precio": 20,
+    "stock": 11,
     "imagen": "https://static.wikia.nocookie.net/digimon-card/images/5/5c/P-001.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 8",
+    "nombre": "Carta Brillante 8",
     "categoria": "Dragon Ball",
-    "precio": 29.5,
-    "stock": 4,
     "idioma": "Ingl\u00e9s",
+    "precio": 23,
+    "stock": 12,
     "imagen": "https://www.dbs-cardgame.com/images/cardlist/card/BT9-105_SR.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 9",
+    "nombre": "Carta Brillante 9",
     "categoria": "Pok\u00e9mon",
-    "precio": 33.0,
-    "stock": 5,
     "idioma": "Japon\u00e9s",
+    "precio": 26,
+    "stock": 13,
     "imagen": "https://images.pokemontcg.io/base1/4_hires.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 10",
+    "nombre": "Carta Brillante 10",
     "categoria": "One Piece",
-    "precio": 36.5,
-    "stock": 6,
     "idioma": "Espa\u00f1ol",
+    "precio": 29,
+    "stock": 14,
     "imagen": "https://images.onepiece-cardgame.dev/cards/OP01-025/thumbnail.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 11",
+    "nombre": "Carta Brillante 11",
     "categoria": "Digimon",
-    "precio": 40.0,
-    "stock": 2,
     "idioma": "Ingl\u00e9s",
+    "precio": 32,
+    "stock": 15,
     "imagen": "https://static.wikia.nocookie.net/digimon-card/images/5/5c/P-001.png"
   },
   {
     "tipo": "carta",
-    "nombre": "Carta Legendaria 12",
+    "nombre": "Carta Brillante 12",
     "categoria": "Dragon Ball",
-    "precio": 43.5,
-    "stock": 3,
     "idioma": "Japon\u00e9s",
+    "precio": 35,
+    "stock": 16,
     "imagen": "https://www.dbs-cardgame.com/images/cardlist/card/BT9-105_SR.png"
   }
 ]
