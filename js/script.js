@@ -2,29 +2,26 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('data/productos.json')
     .then(res => res.json())
     .then(data => {
-      const contenedor = document.getElementById('productos-cajas');
+      const pagina = document.body.dataset.page;
+      const esCajas = pagina === 'cajas';
+      const esCartas = pagina === 'cartas';
+      const contenedor = document.getElementById(esCajas ? 'productos-cajas' : 'productos-cartas');
+
       const filtroNombre = document.getElementById('filtro-nombre');
       const filtroCategoria = document.getElementById('filtro-categoria');
-      const filtroIdioma = document.getElementById('filtro-idioma');
       const filtroPrecio = document.getElementById('filtro-precio');
-      const filtroStock = document.getElementById('filtro-stock');
       const precioValor = document.getElementById('precio-valor');
 
-      let productos = data.filter(p => p.tipo === 'caja');
+      let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
 
       const render = (lista) => {
         contenedor.innerHTML = lista.map(p => `
-          <div class="producto">
-            <img src="${p.imagen}" alt="${p.nombre}" onclick="mostrarImagen('${p.imagen}')">
+          <div class="producto" onclick="window.open('${p.enlace}', '_blank')">
+            <img src="${p.imagen}" alt="${p.nombre}">
             <h3>${p.nombre}</h3>
             <p>Categoría: ${p.categoria}</p>
-            <p>Idioma: ${p.idioma || 'Desconocido'}</p>
             <p>Precio: ${p.precio}€</p>
             <p>Stock: ${p.stock}</p>
-            <div class="modo-compra">
-              <label><input type="radio" name="modo-${p.nombre}" value="sellada" checked> Sellada</label>
-              <label><input type="radio" name="modo-${p.nombre}" value="directo"> Abrir en directo</label>
-            </div>
           </div>
         `).join('');
       };
@@ -33,49 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
         let filtrados = productos;
         const q = filtroNombre?.value.toLowerCase() || "";
         const cat = filtroCategoria?.value.toLowerCase() || "";
-        const idioma = filtroIdioma?.value.toLowerCase() || "";
         const max = parseFloat(filtroPrecio?.value) || 100;
 
         if (q) filtrados = filtrados.filter(p => p.nombre.toLowerCase().includes(q));
         if (cat) filtrados = filtrados.filter(p => p.categoria.toLowerCase().includes(cat));
-        if (idioma) filtrados = filtrados.filter(p => (p.idioma || '').toLowerCase().includes(idioma));
         filtrados = filtrados.filter(p => parseFloat(p.precio) <= max);
-        if (filtroStock?.value === "disponible") {
-          filtrados = filtrados.filter(p => p.stock > 0);
-        } else if (filtroStock?.value === "agotado") {
-          filtrados = filtrados.filter(p => p.stock <= 0);
-        }
 
         render(filtrados);
       };
 
       render(productos);
+
       filtroNombre?.addEventListener('input', aplicarFiltros);
       filtroCategoria?.addEventListener('change', aplicarFiltros);
-      filtroIdioma?.addEventListener('change', aplicarFiltros);
       filtroPrecio?.addEventListener('input', () => {
-        aplicarFiltros();
-      });
-      filtroStock?.addEventListener('change', aplicarFiltros);
         precioValor.textContent = filtroPrecio.value;
         aplicarFiltros();
       });
     });
 });
-
-function mostrarImagen(src) {
-  const overlay = document.createElement('div');
-  overlay.style.position = 'fixed';
-  overlay.style.top = 0;
-  overlay.style.left = 0;
-  overlay.style.width = '100vw';
-  overlay.style.height = '100vh';
-  overlay.style.background = 'rgba(0,0,0,0.8)';
-  overlay.style.display = 'flex';
-  overlay.style.alignItems = 'center';
-  overlay.style.justifyContent = 'center';
-  overlay.style.zIndex = 1000;
-  overlay.innerHTML = `<img src="${src}" style="max-width:90vw; max-height:90vh; border-radius:8px;">`;
-  overlay.onclick = () => document.body.removeChild(overlay);
-  document.body.appendChild(overlay);
-}
