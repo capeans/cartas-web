@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch('data/productos.json')
     .then(res => res.json())
@@ -12,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const filtroPrecio = document.getElementById('filtro-precio');
       const precioValor = document.getElementById('precio-valor');
       const filtroIdioma = document.getElementById('filtro-idioma');
-      const btnFiltrar = document.getElementById('btn-filtrar');
 
       let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
 
@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       render(productos);
 
-      // Aplicar filtros solo cuando se haga clic en el botón "Buscar"
-      btnFiltrar?.addEventListener('click', aplicarFiltros);
-
-      // Mostrar valor dinámico del precio
+      filtroNombre?.addEventListener('input', aplicarFiltros);
+      filtroCategoria?.addEventListener('change', aplicarFiltros);
+      filtroIdioma?.addEventListener('change', aplicarFiltros);
       filtroPrecio?.addEventListener('input', () => {
         precioValor.textContent = filtroPrecio.value;
+        aplicarFiltros();
       });
     });
 });
