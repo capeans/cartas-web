@@ -2,8 +2,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 1",
-    "categoria": "Pok\u00e9mon",
-    "idioma": "Espa\u00f1ol",
+    "categoria": "Digimon",
+    "idioma": "Español",
     "precio": 50,
     "stock": 10,
     "imagen": "img/cajas/digimon/1.png"
@@ -11,8 +11,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 2",
-    "categoria": "One Piece",
-    "idioma": "Ingl\u00e9s",
+    "categoria": "Digimon",
+    "idioma": "Español",
     "precio": 55,
     "stock": 10,
     "imagen": "img/cajas/digimon/2.png"
@@ -20,8 +20,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 3",
-    "categoria": "Digimon",
-    "idioma": "Japon\u00e9s",
+    "categoria": "One Piece",
+    "idioma": "Español",
     "precio": 60,
     "stock": 10,
     "imagen": "img/cajas/one piece/1.png"
@@ -29,8 +29,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 4",
-    "categoria": "Dragon Ball",
-    "idioma": "Espa\u00f1ol",
+    "categoria": "One Piece",
+    "idioma": "Español",
     "precio": 65,
     "stock": 10,
     "imagen": "img/cajas/one piece/2.png"
@@ -38,8 +38,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 5",
-    "categoria": "Pok\u00e9mon",
-    "idioma": "Ingl\u00e9s",
+    "categoria": "Pokemon",
+    "idioma": "Español",
     "precio": 70,
     "stock": 10,
     "imagen": "img/cajas/pokemon/1.png"
@@ -47,8 +47,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 6",
-    "categoria": "One Piece",
-    "idioma": "Japon\u00e9s",
+    "categoria": "Pokemon",
+    "idioma": "Español",
     "precio": 75,
     "stock": 10,
     "imagen": "img/cajas/pokemon/2.png"
@@ -56,8 +56,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 7",
-    "categoria": "Digimon",
-    "idioma": "Espa\u00f1ol",
+    "categoria": "Magic",
+    "idioma": "Español",
     "precio": 80,
     "stock": 10,
     "imagen": "img/cajas/magic/1.png"
@@ -65,8 +65,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 8",
-    "categoria": "Dragon Ball",
-    "idioma": "Ingl\u00e9s",
+    "categoria": "Magic",
+    "idioma": "Español",
     "precio": 85,
     "stock": 10,
     "imagen": "img/cajas/magic/2.png"
@@ -74,8 +74,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 9",
-    "categoria": "Pok\u00e9mon",
-    "idioma": "Japon\u00e9s",
+    "categoria": "Dragon Ball",
+    "idioma": "Español",
     "precio": 90,
     "stock": 10,
     "imagen": "img/cajas/dragonball/1.png"
@@ -83,8 +83,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 10",
-    "categoria": "One Piece",
-    "idioma": "Espa\u00f1ol",
+    "categoria": "Dragon Ball",
+    "idioma": "Español",
     "precio": 95,
     "stock": 10,
     "imagen": "img/cajas/dragonball/2.png"
@@ -92,8 +92,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 11",
-    "categoria": "Digimon",
-    "idioma": "Ingl\u00e9s",
+    "categoria": "Yugioh",
+    "idioma": "Español",
     "precio": 100,
     "stock": 10,
     "imagen": "img/cajas/yugioh/1.png"
@@ -101,8 +101,8 @@
   {
     "tipo": "caja",
     "nombre": "Caja Stock 12",
-    "categoria": "Dragon Ball",
-    "idioma": "Japon\u00e9s",
+    "categoria": "Yugioh",
+    "idioma": "Español",
     "precio": 105,
     "stock": 10,
     "imagen": "img/cajas/yugioh/2.png"
@@ -110,8 +110,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 1",
-    "categoria": "Pok\u00e9mon",
-    "idioma": "Espa\u00f1ol",
+    "categoria": "Digimon",
+    "idioma": "Español",
     "precio": 5,
     "stock": 8,
     "imagen": "img/cartas/digimon/1.png"
@@ -119,8 +119,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 2",
-    "categoria": "One Piece",
-    "idioma": "Ingl\u00e9s",
+    "categoria": "Digimon",
+    "idioma": "Español",
     "precio": 7,
     "stock": 8,
     "imagen": "img/cartas/digimon/1.png"
@@ -129,7 +129,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 3",
     "categoria": "Digimon",
-    "idioma": "Japon\u00e9s",
+    "idioma": "Español",
     "precio": 9,
     "stock": 8,
     "imagen": "img/cartas/digimon/1.png"
@@ -137,8 +137,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 4",
-    "categoria": "Dragon Ball",
-    "idioma": "Espa\u00f1ol",
+    "categoria": "Digimon",
+    "idioma": "Español",
     "precio": 11,
     "stock": 8,
     "imagen": "img/cartas/digimon/2.png"
@@ -146,8 +146,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 5",
-    "categoria": "Pok\u00e9mon",
-    "idioma": "Ingl\u00e9s",
+    "categoria": "Digimon",
+    "idioma": "Español",
     "precio": 13,
     "stock": 8,
     "imagen": "img/cartas/digimon/3.jpg"
@@ -156,7 +156,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 6",
     "categoria": "One Piece",
-    "idioma": "Japon\u00e9s",
+    "idioma": "Español",
     "precio": 15,
     "stock": 8,
     "imagen": "img/cartas/onepiece/1.png"
@@ -164,8 +164,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 7",
-    "categoria": "Digimon",
-    "idioma": "Espa\u00f1ol",
+    "categoria": "One Piece",
+    "idioma": "Español",
     "precio": 17,
     "stock": 8,
     "imagen": "img/cartas/onepiece/2.jpg"
@@ -173,8 +173,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 8",
-    "categoria": "Dragon Ball",
-    "idioma": "Ingl\u00e9s",
+    "categoria": "One Piece",
+    "idioma": "Español",
     "precio": 19,
     "stock": 8,
     "imagen": "img/cartas/onepiece/3.jpg"
@@ -182,8 +182,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 9",
-    "categoria": "Pok\u00e9mon",
-    "idioma": "Japon\u00e9s",
+    "categoria": "Pokemon",
+    "idioma": "Español",
     "precio": 21,
     "stock": 8,
     "imagen": "img/cartas/pokemon/1.png"
@@ -191,8 +191,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 10",
-    "categoria": "One Piece",
-    "idioma": "Espa\u00f1ol",
+    "categoria": "Pokemon",
+    "idioma": "Español",
     "precio": 23,
     "stock": 8,
     "imagen": "img/cartas/pokemon/3.jpg"
@@ -200,8 +200,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 11",
-    "categoria": "Digimon",
-    "idioma": "Ingl\u00e9s",
+    "categoria": "Pokemon",
+    "idioma": "Español",
     "precio": 25,
     "stock": 8,
     "imagen": "img/cartas/pokemon/5.jpg"
@@ -209,8 +209,8 @@
   {
     "tipo": "carta",
     "nombre": "Carta Stock 12",
-    "categoria": "Dragon Ball",
-    "idioma": "Japon\u00e9s",
+    "categoria": "Pokemon",
+    "idioma": "Español",
     "precio": 27,
     "stock": 8,
     "imagen": "img/cartas/pokemon/1.png"
