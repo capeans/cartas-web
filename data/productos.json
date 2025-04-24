@@ -3,7 +3,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 1",
     "categoria": "Digimon",
-    "idioma": "español",
+    "idioma": "Español",
     "precio": 50,
     "stock": 10,
     "imagen": "img/cajas/digimon/1.png"
@@ -12,7 +12,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 2",
     "categoria": "Digimon",
-    "idioma": "español",
+    "idioma": "Español",
     "precio": 55,
     "stock": 10,
     "imagen": "img/cajas/digimon/2.png"
@@ -21,7 +21,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 3",
     "categoria": "One Piece",
-    "idioma": "español",
+    "idioma": "Español",
     "precio": 60,
     "stock": 10,
     "imagen": "img/cajas/one piece/1.png"
@@ -30,7 +30,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 4",
     "categoria": "One Piece",
-    "idioma": "español",
+    "idioma": "Español",
     "precio": 65,
     "stock": 10,
     "imagen": "img/cajas/one piece/2.png"
@@ -39,7 +39,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 5",
     "categoria": "Pokemon",
-    "idioma": "inglés",
+    "idioma": "Inglés",
     "precio": 70,
     "stock": 10,
     "imagen": "img/cajas/pokemon/1.png"
@@ -48,7 +48,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 6",
     "categoria": "Pokemon",
-    "idioma": "inglés",
+    "idioma": "Inglés",
     "precio": 75,
     "stock": 10,
     "imagen": "img/cajas/pokemon/2.png"
@@ -57,7 +57,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 7",
     "categoria": "Magic",
-    "idioma": "japonés",
+    "idioma": "Inglés",
     "precio": 80,
     "stock": 10,
     "imagen": "img/cajas/magic/1.png"
@@ -66,7 +66,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 8",
     "categoria": "Magic",
-    "idioma": "japonés",
+    "idioma": "Japonés",
     "precio": 85,
     "stock": 10,
     "imagen": "img/cajas/magic/2.png"
@@ -75,7 +75,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 9",
     "categoria": "Dragon Ball",
-    "idioma": "Español",
+    "idioma": "Japonés",
     "precio": 90,
     "stock": 10,
     "imagen": "img/cajas/dragonball/1.png"
@@ -84,7 +84,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 10",
     "categoria": "Dragon Ball",
-    "idioma": "Español",
+    "idioma": "Japonés",
     "precio": 95,
     "stock": 10,
     "imagen": "img/cajas/dragonball/2.png"
@@ -93,7 +93,7 @@
     "tipo": "caja",
     "nombre": "Caja Stock 11",
     "categoria": "Yugioh",
-    "idioma": "Español",
+    "idioma": "Japonés",
     "precio": 100,
     "stock": 10,
     "imagen": "img/cajas/yugioh/1.png"
@@ -156,7 +156,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 6",
     "categoria": "One Piece",
-    "idioma": "Español",
+    "idioma": "Inglés",
     "precio": 15,
     "stock": 8,
     "imagen": "img/cartas/onepiece/1.png"
@@ -165,7 +165,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 7",
     "categoria": "One Piece",
-    "idioma": "Español",
+    "idioma": "Inglés",
     "precio": 17,
     "stock": 8,
     "imagen": "img/cartas/onepiece/2.jpg"
@@ -174,7 +174,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 8",
     "categoria": "One Piece",
-    "idioma": "Español",
+    "idioma": "Inglés",
     "precio": 19,
     "stock": 8,
     "imagen": "img/cartas/onepiece/3.jpg"
@@ -183,7 +183,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 9",
     "categoria": "Pokemon",
-    "idioma": "inglés",
+    "idioma": "Japonés",
     "precio": 21,
     "stock": 8,
     "imagen": "img/cartas/pokemon/1.png"
@@ -192,7 +192,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 10",
     "categoria": "Pokemon",
-    "idioma": "inglés",
+    "idioma": "Japonés",
     "precio": 23,
     "stock": 8,
     "imagen": "img/cartas/pokemon/3.jpg"
@@ -201,7 +201,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 11",
     "categoria": "Pokemon",
-    "idioma": "japonés",
+    "idioma": "Japonés",
     "precio": 25,
     "stock": 8,
     "imagen": "img/cartas/pokemon/5.jpg"
@@ -210,7 +210,7 @@
     "tipo": "carta",
     "nombre": "Carta Stock 12",
     "categoria": "Pokemon",
-    "idioma": "japonés",
+    "idioma": "Japonés",
     "precio": 27,
     "stock": 8,
     "imagen": "img/cartas/pokemon/1.png"
