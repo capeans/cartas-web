@@ -6,7 +6,7 @@
     "idioma": "Espa\u00f1ol",
     "precio": 50,
     "stock": 10,
-    "imagen": "img/caja1.jpg"
+    "imagen": "img/cajas/digimon/1.png"
   },
   {
     "tipo": "caja",
@@ -15,7 +15,7 @@
     "idioma": "Ingl\u00e9s",
     "precio": 55,
     "stock": 10,
-    "imagen": "img/caja2.jpg"
+    "imagen": "img/cajas/digimon/2.png"
   },
   {
     "tipo": "caja",
@@ -24,7 +24,7 @@
     "idioma": "Japon\u00e9s",
     "precio": 60,
     "stock": 10,
-    "imagen": "img/caja3.jpg"
+    "imagen": "img/cajas/one piece/1.png"
   },
   {
     "tipo": "caja",
@@ -33,7 +33,7 @@
     "idioma": "Espa\u00f1ol",
     "precio": 65,
     "stock": 10,
-    "imagen": "img/caja4.jpg"
+    "imagen": "img/cajas/one piece/2.png"
   },
   {
     "tipo": "caja",
@@ -42,7 +42,7 @@
     "idioma": "Ingl\u00e9s",
     "precio": 70,
     "stock": 10,
-    "imagen": "img/caja5.jpg"
+    "imagen": "img/cajas/pokemon/1.png"
   },
   {
     "tipo": "caja",
@@ -51,7 +51,7 @@
     "idioma": "Japon\u00e9s",
     "precio": 75,
     "stock": 10,
-    "imagen": "img/caja6.jpg"
+    "imagen": "img/cajas/pokemon/2.png"
   },
   {
     "tipo": "caja",
@@ -60,7 +60,7 @@
     "idioma": "Espa\u00f1ol",
     "precio": 80,
     "stock": 10,
-    "imagen": "img/caja7.jpg"
+    "imagen": "img/cajas/magic/1.png"
   },
   {
     "tipo": "caja",
@@ -69,7 +69,7 @@
     "idioma": "Ingl\u00e9s",
     "precio": 85,
     "stock": 10,
-    "imagen": "img/caja8.jpg"
+    "imagen": "img/cajas/magic/2.png"
   },
   {
     "tipo": "caja",
@@ -78,7 +78,7 @@
     "idioma": "Japon\u00e9s",
     "precio": 90,
     "stock": 10,
-    "imagen": "img/caja9.jpg"
+    "imagen": "img/cajas/dragonball/1.png"
   },
   {
     "tipo": "caja",
@@ -87,7 +87,7 @@
     "idioma": "Espa\u00f1ol",
     "precio": 95,
     "stock": 10,
-    "imagen": "img/caja10.jpg"
+    "imagen": "img/cajas/dragonball/2.png"
   },
   {
     "tipo": "caja",
@@ -96,7 +96,7 @@
     "idioma": "Ingl\u00e9s",
     "precio": 100,
     "stock": 10,
-    "imagen": "img/caja11.jpg"
+    "imagen": "img/cajas/yugioh/1.png"
   },
   {
     "tipo": "caja",
@@ -105,7 +105,7 @@
     "idioma": "Japon\u00e9s",
     "precio": 105,
     "stock": 10,
-    "imagen": "img/caja12.jpg"
+    "imagen": "img/cajas/yugioh/2.png"
   },
   {
     "tipo": "carta",
@@ -114,7 +114,7 @@
     "idioma": "Espa\u00f1ol",
     "precio": 5,
     "stock": 8,
-    "imagen": "img/carta1.jpg"
+    "imagen": "img/cartas/digimon/1.png"
   },
   {
     "tipo": "carta",
@@ -123,7 +123,7 @@
     "idioma": "Ingl\u00e9s",
     "precio": 7,
     "stock": 8,
-    "imagen": "img/carta2.jpg"
+    "imagen": "img/cartas/digimon/1.png"
   },
   {
     "tipo": "carta",
@@ -132,7 +132,7 @@
     "idioma": "Japon\u00e9s",
     "precio": 9,
     "stock": 8,
-    "imagen": "img/carta3.jpg"
+    "imagen": "img/cartas/digimon/1.png"
   },
   {
     "tipo": "carta",
@@ -141,7 +141,7 @@
     "idioma": "Espa\u00f1ol",
     "precio": 11,
     "stock": 8,
-    "imagen": "img/carta4.jpg"
+    "imagen": "img/cartas/digimon/2.png"
   },
   {
     "tipo": "carta",
@@ -150,7 +150,7 @@
     "idioma": "Ingl\u00e9s",
     "precio": 13,
     "stock": 8,
-    "imagen": "img/carta5.jpg"
+    "imagen": "img/cartas/digimon/3.jpg"
   },
   {
     "tipo": "carta",
@@ -159,7 +159,7 @@
     "idioma": "Japon\u00e9s",
     "precio": 15,
     "stock": 8,
-    "imagen": "img/carta6.jpg"
+    "imagen": "img/cartas/onepiece/1.png"
   },
   {
     "tipo": "carta",
@@ -168,7 +168,7 @@
     "idioma": "Espa\u00f1ol",
     "precio": 17,
     "stock": 8,
-    "imagen": "img/carta7.jpg"
+    "imagen": "img/cartas/onepiece/2.jpg"
   },
   {
     "tipo": "carta",
@@ -177,7 +177,7 @@
     "idioma": "Ingl\u00e9s",
     "precio": 19,
     "stock": 8,
-    "imagen": "img/carta8.jpg"
+    "imagen": "img/cartas/onepiece/3.jpg"
   },
   {
     "tipo": "carta",
@@ -186,7 +186,7 @@
     "idioma": "Japon\u00e9s",
     "precio": 21,
     "stock": 8,
-    "imagen": "img/carta9.jpg"
+    "imagen": "img/cartas/pokemon/1.png"
   },
   {
     "tipo": "carta",
@@ -195,7 +195,7 @@
     "idioma": "Espa\u00f1ol",
     "precio": 23,
     "stock": 8,
-    "imagen": "img/carta10.jpg"
+    "imagen": "img/cartas/pokemon/3.jpg"
   },
   {
     "tipo": "carta",
@@ -204,7 +204,7 @@
     "idioma": "Ingl\u00e9s",
     "precio": 25,
     "stock": 8,
-    "imagen": "img/carta11.jpg"
+    "imagen": "img/cartas/pokemon/5.jpg"
   },
   {
     "tipo": "carta",
@@ -213,6 +213,6 @@
     "idioma": "Japon\u00e9s",
     "precio": 27,
     "stock": 8,
-    "imagen": "img/carta12.jpg"
+    "imagen": "img/cartas/pokemon/1.png"
   }
 ]
