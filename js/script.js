@@ -32,13 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const cat = filtroCategoria?.value.toLowerCase() || "";
         const max = parseFloat(filtroPrecio?.value) || 1000;
         const idioma = document.getElementById('filtro-idioma')?.value.toLowerCase() || "";
-        if (idioma) filtrados = filtrados.filter(p => p.idioma.toLowerCase().includes(idioma));
-
-
+      
         if (q) filtrados = filtrados.filter(p => p.nombre.toLowerCase().includes(q));
         if (cat) filtrados = filtrados.filter(p => p.categoria.toLowerCase().includes(cat));
+        if (idioma) filtrados = filtrados.filter(p => (p.idioma || "").toLowerCase().includes(idioma));
         filtrados = filtrados.filter(p => parseFloat(p.precio) <= max);
-
+      
         render(filtrados);
       };
 
