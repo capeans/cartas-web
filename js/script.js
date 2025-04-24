@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const render = (lista) => {
         contenedor.innerHTML = lista.map(p => `
           <div class="producto" onclick="window.open('${p.enlace}', '_blank')">
-            <img src="${p.imagen}" alt="${p.nombre}">
+            <img src="${p.imagen}" alt="${p.nombre}" onclick=\"abrirImagenGrande(\'${p.imagen}\')" style=\"cursor:zoom-in;\">
             <h3>${p.nombre}</h3>
             <p>Categoría: ${p.categoria}</p>
             <p>Precio: ${p.precio}€</p>
@@ -49,3 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 });
+
+
+function abrirImagenGrande(src) {
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+  overlay.style.width = "100vw";
+  overlay.style.height = "100vh";
+  overlay.style.background = "rgba(0,0,0,0.8)";
+  overlay.style.display = "flex";
+  overlay.style.alignItems = "center";
+  overlay.style.justifyContent = "center";
+  overlay.style.zIndex = 1000;
+  overlay.innerHTML = `<img src="${src}" style="max-width:90vw; max-height:90vh; border-radius:10px;">`;
+  overlay.addEventListener("click", () => document.body.removeChild(overlay));
+  document.body.appendChild(overlay);
+}
