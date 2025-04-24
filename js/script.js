@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const render = (lista) => {
         contenedor.innerHTML = lista.map(p => `
-          <div class="producto" onclick="window.open('${p.enlace}', '_blank')">
-            <img src="${p.imagen}" alt="${p.nombre}" onclick=\"abrirImagenGrande(\'${p.imagen}\')" style=\"cursor:zoom-in;\">
+          <div class="producto">
+            <img src="${p.imagen}" alt="${p.nombre}" onclick="abrirImagenGrande('${p.imagen}')" style="cursor:zoom-in;">
             <h3>${p.nombre}</h3>
             <p>Categoría: ${p.categoria}</p>
             <p>Precio: ${p.precio}€</p>
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let filtrados = productos;
         const q = filtroNombre?.value.toLowerCase() || "";
         const cat = filtroCategoria?.value.toLowerCase() || "";
-        const max = parseFloat(filtroPrecio?.value) || 100;
+        const max = parseFloat(filtroPrecio?.value) || 1000;
 
         if (q) filtrados = filtrados.filter(p => p.nombre.toLowerCase().includes(q));
         if (cat) filtrados = filtrados.filter(p => p.categoria.toLowerCase().includes(cat));
@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 });
-
 
 function abrirImagenGrande(src) {
   const overlay = document.createElement("div");
