@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const filtroCategoria = document.getElementById('filtro-categoria');
       const filtroPrecio = document.getElementById('filtro-precio');
       const precioValor = document.getElementById('precio-valor');
+      const filtroIdioma = document.getElementById('filtro-idioma');
+      const btnFiltrar = document.getElementById('btn-filtrar');
 
       let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
 
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="${p.imagen}" alt="${p.nombre}" onclick="abrirImagenGrande('${p.imagen}')" style="cursor:zoom-in;">
             <h3>${p.nombre}</h3>
             <p>Categoría: ${p.categoria}</p>
+            <p>Idioma: ${p.idioma}</p>
             <p>Precio: ${p.precio}€</p>
             <p>Stock: ${p.stock}</p>
           </div>
@@ -30,24 +33,25 @@ document.addEventListener('DOMContentLoaded', () => {
         let filtrados = productos;
         const q = filtroNombre?.value.toLowerCase() || "";
         const cat = filtroCategoria?.value.toLowerCase() || "";
+        const idioma = filtroIdioma?.value.toLowerCase() || "";
         const max = parseFloat(filtroPrecio?.value) || 1000;
-        const idioma = document.getElementById('filtro-idioma')?.value.toLowerCase() || "";
-      
+
         if (q) filtrados = filtrados.filter(p => p.nombre.toLowerCase().includes(q));
         if (cat) filtrados = filtrados.filter(p => p.categoria.toLowerCase().includes(cat));
         if (idioma) filtrados = filtrados.filter(p => (p.idioma || "").toLowerCase().includes(idioma));
         filtrados = filtrados.filter(p => parseFloat(p.precio) <= max);
-      
+
         render(filtrados);
       };
 
       render(productos);
 
-      filtroNombre?.addEventListener('input', aplicarFiltros);
-      filtroCategoria?.addEventListener('change', aplicarFiltros);
+      // Aplicar filtros solo cuando se haga clic en el botón "Buscar"
+      btnFiltrar?.addEventListener('click', aplicarFiltros);
+
+      // Mostrar valor dinámico del precio
       filtroPrecio?.addEventListener('input', () => {
         precioValor.textContent = filtroPrecio.value;
-        aplicarFiltros();
       });
     });
 });
