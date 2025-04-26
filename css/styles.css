@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -43,6 +42,7 @@ h1, h2 {
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border-radius: 8px;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .producto:hover {
   transform: scale(1.03);
@@ -89,39 +89,7 @@ footer {
   font-weight: bold;
 }
 
-.grid-categorias {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1.5em;
-  margin-top: 1em;
-}
-.category-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1em;
-  border-radius: 8px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-.category-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.category-card img {
-  max-width: 100%;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-.category-card span {
-  display: block;
-  font-weight: bold;
-  color: #333;
-}
-
-
-/* Estilo del panel de filtros lateral */
+/* Panel lateral de filtros */
 aside {
   background: #ffffff;
   border-radius: 8px;
@@ -147,18 +115,15 @@ aside select, aside input[type="text"], aside input[type="range"] {
   font-size: 0.95em;
 }
 
-/* Animación para mostrar productos */
-.producto {
-  animation: fadeIn 0.5s ease-in-out;
-}
+/* Animación aparición de productos */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* HERO CON FONDO E IMAGEN DETRÁS */
+/* HERO de bienvenida */
 .hero-home {
-  background-image: url('../img/banner.jpg'); /* Reemplaza con tu imagen */
+  background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -171,7 +136,7 @@ aside select, aside input[type="text"], aside input[type="range"] {
 .hero-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Oscurecer para que se lea el texto */
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,27 +165,39 @@ aside select, aside input[type="text"], aside input[type="range"] {
   background: #ffcc00;
 }
 
-/* CUADRÍCULA DE CATEGORÍAS */
-.categorias-grid {
+/* Grid de categorías con imagen */
+.grid-categorias-img {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5em;
-  margin: 2em;
-  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2em;
+  margin: 2em auto;
+  padding: 0 2em;
+  justify-items: center;
 }
-.categoria {
+.category-img {
   background: white;
-  padding: 1.2em;
+  padding: 1em;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  font-weight: bold;
-  font-size: 1.1em;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  max-width: 200px;
 }
-.categoria:hover {
+.category-img:hover {
   transform: scale(1.05);
-  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
-
+.category-img img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+.category-img span {
+  display: block;
+  font-weight: bold;
+  color: #111;
+  font-size: 1.05em;
+}
