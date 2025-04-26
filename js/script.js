@@ -13,13 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const precioValor = document.getElementById('precio-valor');
       const filtroIdioma = document.getElementById('filtro-idioma');
 
-      let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
+      // 🔥 Guardamos TODOS los productos iniciales
+      const productosOriginales = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
 
-      // 🔥 Detectar categoría de la URL
+      // 🔥 Detectar si hay categoría en la URL
       const params = new URLSearchParams(window.location.search);
       const categoriaInicial = params.get('categoria')?.toLowerCase();
+
+      // 🔥 Mostrar productos iniciales filtrados SOLO si llega una categoría
+      let productosMostrados = [...productosOriginales];
       if (categoriaInicial) {
-        productos = productos.filter(p => p.categoria.toLowerCase().replace(/ /g, "-") === categoriaInicial);
+        productosMostrados = productosOriginales.filter(p => p.categoria.toLowerCase().replace(/ /g, "-") === categoriaInicial);
       }
 
       const render = (lista) => {
@@ -36,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       const aplicarFiltros = () => {
-        let filtrados = productos;
+        let filtrados = [...productosOriginales];
         const q = filtroNombre?.value.toLowerCase() || "";
         const cat = filtroCategoria?.value.toLowerCase() || "";
         const idioma = filtroIdioma?.value.toLowerCase() || "";
@@ -50,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         render(filtrados);
       };
 
-      render(productos);
+      render(productosMostrados);
 
       filtroNombre?.addEventListener('input', aplicarFiltros);
       filtroCategoria?.addEventListener('change', aplicarFiltros);
@@ -69,11 +73,11 @@ function abrirImagenGrande(src) {
   overlay.style.left = 0;
   overlay.style.width = "100vw";
   overlay.style.height = "100vh";
-  overlay.style.background = "rgba(0,0,0,0.8)";
-  overlay.style.display = "flex";
-  overlay.style.alignItems = "center";
-  overlay.style.justifyContent = "center";
-  overlay.style.zIndex = 1000;
+  overlay.style.background: rgba(0, 0, 0, 0.8);
+  overlay.style.display: "flex";
+  overlay.style.alignItems: "center";
+  overlay.style.justifyContent: "center";
+  overlay.style.zIndex: "1000";
   overlay.innerHTML = `<img src="${src}" style="max-width:90vw; max-height:90vh; border-radius:10px;">`;
   overlay.addEventListener("click", () => document.body.removeChild(overlay));
   document.body.appendChild(overlay);
