@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   fetch('data/productos.json')
     .then(res => res.json())
@@ -15,6 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const filtroIdioma = document.getElementById('filtro-idioma');
 
       let productos = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
+
+      // 🔥 Detectar categoría de la URL
+      const params = new URLSearchParams(window.location.search);
+      const categoriaInicial = params.get('categoria')?.toLowerCase();
+      if (categoriaInicial) {
+        productos = productos.filter(p => p.categoria.toLowerCase().replace(/ /g, "-") === categoriaInicial);
+      }
 
       const render = (lista) => {
         contenedor.innerHTML = lista.map(p => `
