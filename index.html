@@ -16,55 +16,48 @@
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
-  <main>
-    <section style="display:flex; flex-wrap:wrap; gap:2em; align-items:center;">
-      <div style="flex:1;">
-        <h1>Bienvenido a UZUTCG</h1>
-        <p>Explora el mundo de los juegos de cartas coleccionables con nuestra selección de Pokémon, One Piece, Digimon, Naruto y más.</p>
-        <a href="contacto.html"><button>Contactar con nosotros</button></a>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Cartas Únicas</h1>
+      <p>Descubre nuestra colección de cartas coleccionables</p>
+    </div>
+    <div class="hero-image">
+      <img src="img/banner.jpg" alt="Banner Uzutcg">
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="categorias">
+    <h2>Explora por categoría</h2>
+    <div class="grid-categorias">
+      <div class="category-card" onclick="window.location.href='cajas.html?categoria=pokemon'">
+        <img src="img/fondos/pokemon.png" alt="pokemon">
+        <span>Pokémon</span>
       </div>
-      <div style="flex:1;">
-        <img src="img/banner.jpg" alt="Banner Uzutcg" style="width:100%; border-radius:10px;">
+      <div class="category-card" onclick="window.location.href='cajas.html?categoria=one-piece'">
+        <img src="img/fondos/onePiece.png" alt="one-piece">
+        <span>One Piece</span>
       </div>
-    </section>
-
-    <section>
-      <h2 style="margin-top:2em;">Explora por categoría</h2>
-      <div class="grid-categorias">
-        
-        <div class="category-card" onclick="window.location.href='cajas.html?categoria=pokemon'">
-          <img src="img/fondos/pokemon.png" alt="pokemon">
-          <span>Pokémon</span>
-        </div>
-
-        <div class="category-card" onclick="window.location.href='cajas.html?categoria=one-piece'">
-          <img src="img/fondos/onePiece.png" alt="one-piece">
-          <span>One Piece</span>
-        </div>
-
-        <div class="category-card" onclick="window.location.href='cajas.html?categoria=yugioh'">
-          <img src="img/fondos/yugioh.png" alt="yugioh">
-          <span>Naruto</span>
-        </div>
-
-        <div class="category-card" onclick="window.location.href='cajas.html?categoria=digimon'">
-          <img src="img/fondos/digimon.png" alt="digimon">
-          <span>Digimon</span>
-        </div>
-
-        <div class="category-card" onclick="window.location.href='cajas.html?categoria=dragon-ball'">
-          <img src="img/fondos/dragonBall.png" alt="dragon-ball">
-          <span>Dragon Ball</span>
-        </div>
-
-        <div class="category-card" onclick="window.location.href='cajas.html?categoria=otros'">
-          <img src="img/fondos/otros.png" alt="otros">
-          <span>Otros</span>
-        </div>
-
+      <div class="category-card" onclick="window.location.href='cajas.html?categoria=yugioh'">
+        <img src="img/fondos/yugioh.png" alt="yugioh">
+        <span>Yu-Gi-Oh!</span>
       </div>
-    </section>
-  </main>
+      <div class="category-card" onclick="window.location.href='cajas.html?categoria=digimon'">
+        <img src="img/fondos/digimon.png" alt="digimon">
+        <span>Digimon</span>
+      </div>
+      <div class="category-card" onclick="window.location.href='cajas.html?categoria=dragon-ball'">
+        <img src="img/fondos/dragonBall.png" alt="dragon-ball">
+        <span>Dragon Ball</span>
+      </div>
+      <div class="category-card" onclick="window.location.href='cajas.html?categoria=otros'">
+        <img src="img/fondos/otros.png" alt="otros">
+        <span>Otros</span>
+      </div>
+    </div>
+  </section>
 
   <footer>
     © 2025 Uzutcg - Todos los derechos reservados
