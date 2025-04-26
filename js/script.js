@@ -5,7 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const pagina = document.body.dataset.page;
       const esCajas = pagina === 'cajas';
       const esCartas = pagina === 'cartas';
-      const contenedor = document.getElementById(esCajas ? 'productos-cajas' : 'productos-cartas');
+      const esTodo = pagina === 'todo'; // ✅ añadimos esta línea
+      const contenedor = document.getElementById(
+        esCajas ? 'productos-cajas' :
+        esCartas ? 'productos-cartas' :
+        'productos-todo'
+      );
 
       const filtroNombre = document.getElementById('filtro-nombre');
       const filtroCategoria = document.getElementById('filtro-categoria');
@@ -14,7 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const filtroIdioma = document.getElementById('filtro-idioma');
 
       // 🔥 Guardamos TODOS los productos iniciales
-      const productosOriginales = data.filter(p => (esCajas && p.tipo === 'caja') || (esCartas && p.tipo === 'carta'));
+      const productosOriginales = data.filter(p =>
+        (esCajas && p.tipo === 'caja') ||
+        (esCartas && p.tipo === 'carta') ||
+        (esTodo) // ✅ si es "todo", no filtramos por tipo
+      );
 
       // 🔥 Detectar si hay categoría en la URL
       const params = new URLSearchParams(window.location.search);
@@ -73,11 +82,11 @@ function abrirImagenGrande(src) {
   overlay.style.left = 0;
   overlay.style.width = "100vw";
   overlay.style.height = "100vh";
-  overlay.style.background: rgba(0, 0, 0, 0.8);
-  overlay.style.display: "flex";
-  overlay.style.alignItems: "center";
-  overlay.style.justifyContent: "center";
-  overlay.style.zIndex: "1000";
+  overlay.style.background = "rgba(0, 0, 0, 0.8)";
+  overlay.style.display = "flex";
+  overlay.style.alignItems = "center";
+  overlay.style.justifyContent = "center";
+  overlay.style.zIndex = "1000";
   overlay.innerHTML = `<img src="${src}" style="max-width:90vw; max-height:90vh; border-radius:10px;">`;
   overlay.addEventListener("click", () => document.body.removeChild(overlay));
   document.body.appendChild(overlay);
