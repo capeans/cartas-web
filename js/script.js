@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="producto">
             <img src="${p.imagen}" alt="${p.nombre}" onclick="abrirImagenGrande('${p.imagen}')" style="cursor:zoom-in;">
             <h3>${p.nombre}</h3>
-            <p><strong>Categoría: ${p.categoria}</p>
-            <p><strong>Idioma: ${p.idioma}</p>
-            <p><strong>Precio: ${p.precio}€</p>
-            <p><strong>Stock: ${p.stock}</p>
+            <p><strong>Categoría:</strong> ${p.categoria}</p>
+            <p><strong>Idioma:</strong> ${p.idioma}</p>
+            <p><strong>Precio:</strong> ${p.precio}€</p>
+            <p><strong>Stock:</strong> ${p.stock}</p>
           </div>
         `).join('');
       };
