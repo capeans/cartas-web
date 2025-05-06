@@ -1,3 +1,5 @@
+let productos = []; // global
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch('data/productos.json')
     .then(res => res.json())
@@ -5,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const pagina = document.body.dataset.page;
       const esCajas = pagina === 'cajas';
       const esCartas = pagina === 'cartas';
-      const esTodo = pagina === 'todo'; // ✅ añadimos esta línea
+      const esTodo = pagina === 'todo';
+
       const contenedor = document.getElementById(
         esCajas ? 'productos-cajas' :
         esCartas ? 'productos-cartas' :
@@ -18,21 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const precioValor = document.getElementById('precio-valor');
       const filtroIdioma = document.getElementById('filtro-idioma');
 
-      // 🔥 Guardamos TODOS los productos iniciales
-      const productosOriginales = data.filter(p =>
+      productos = data.filter(p =>
         (esCajas && p.tipo === 'caja') ||
         (esCartas && p.tipo === 'carta') ||
-        (esTodo) // ✅ si es "todo", no filtramos por tipo
+        esTodo
       );
+      const productosOriginales = [...productos];
 
-      // 🔥 Detectar si hay categoría en la URL
       const params = new URLSearchParams(window.location.search);
       const categoriaInicial = params.get('categoria')?.toLowerCase();
 
-      // 🔥 Mostrar productos iniciales filtrados SOLO si llega una categoría
       let productosMostrados = [...productosOriginales];
       if (categoriaInicial) {
-        productosMostrados = productosOriginales.filter(p => p.categoria.toLowerCase().replace(/ /g, "-") === categoriaInicial);
+        productosMostrados = productosOriginales.filter(p =>
+          p.categoria.toLowerCase().replace(/ /g, "-") === categoriaInicial
+        );
       }
 
       const render = (lista) => {
@@ -76,18 +79,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function abrirImagenGrande(src) {
+  const producto = productos.find(p => p.imagen === src);
   const overlay = document.createElement("div");
   overlay.style.position = "fixed";
   overlay.style.top = 0;
   overlay.style.left = 0;
   overlay.style.width = "100vw";
   overlay.style.height = "100vh";
-  overlay.style.background = "rgba(0, 0, 0, 0.8)";
+  overlay.style.background = "rgba(0,0,0,0.8)";
   overlay.style.display = "flex";
   overlay.style.alignItems = "center";
   overlay.style.justifyContent = "center";
-  overlay.style.zIndex = "1000";
-  overlay.innerHTML = `<img src="${src}" style="max-width:90vw; max-height:90vh; border-radius:10px;">`;
+  overlay.style.zIndex = 1000;
+  overlay.style.padding = "2em";
+  overlay.innerHTML = `
+    <div style="display: flex; gap: 2em; align-items: center; max-width: 90vw; flex-wrap: wrap;">
+      <img src="${src}" style="max-width: 400px; max-height: 80vh; border-radius: 10px;">
+      <div style="color: white; max-width: 400px;">
+        <h2 style="margin-top: 0;">${producto.nombre}</h2>
+        <p><strong>Categoría:</strong> ${producto.categoria}</p>
+        <p><strong>Idioma:</strong> ${producto.idioma}</p>
+        <p><strong>Precio:</strong> ${producto.precio}€</p>
+        <p><strong>Stock:</strong> ${producto.stock > 0 ? 'Disponible' : 'Agotado'}</p>
+        <p><strong>Abrir en directo:</strong> ${producto.abrirEnDirecto ? 'Sí' : 'No'}</p>
+      </div>
+    </div>
+  `;
   overlay.addEventListener("click", () => document.body.removeChild(overlay));
   document.body.appendChild(overlay);
 }
