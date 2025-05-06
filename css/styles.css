@@ -110,7 +110,13 @@ aside h3 {
   color: #333;
 }
 
-aside label, 
+aside label {
+  display: block;
+  margin-bottom: 0.4em;
+  font-weight: bold;
+  color: #333;
+}
+
 aside select, 
 aside input[type="text"], 
 aside input[type="range"] {
@@ -121,8 +127,8 @@ aside input[type="range"] {
   font-size: 0.95em;
   border: 1px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
 }
-
 
 /* Animación aparición de productos */
 @keyframes fadeIn {
