@@ -1,12 +1,11 @@
+/* ESTRUCTURA GENERAL */
 body {
   font-family: 'Segoe UI', sans-serif;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
+
 header {
   background-color: #111;
   color: white;
@@ -27,13 +26,16 @@ nav a {
 nav a:hover {
   color: #f0b400;
 }
+
 main {
   padding: 2em;
-  flex: 1; /* <- Esta línea nueva hace que el contenido empuje el footer hacia abajo */
 }
+
 h1, h2 {
   color: #222;
 }
+
+/* PRODUCTOS */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -58,6 +60,8 @@ h1, h2 {
   object-fit: contain;
   margin-bottom: 10px;
 }
+
+/* FORMULARIOS */
 input, textarea {
   width: 100%;
   max-width: 500px;
@@ -77,13 +81,16 @@ form button {
 form button:hover {
   background: #f0b400;
 }
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 2em;
   background: #222;
   color: white;
-  margin-top: auto; /* Esto lo fuerza al final del layout flex */
 }
+
+/* Contacto */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -93,7 +100,7 @@ footer {
   font-weight: bold;
 }
 
-/* Panel lateral de filtros */
+/* PANEL FILTROS */
 aside {
   background: #ffffff;
   border-radius: 8px;
@@ -103,24 +110,20 @@ aside {
   font-size: 0.95em;
   box-sizing: border-box;
 }
-
 aside * {
   box-sizing: border-box;
 }
-
 aside h3 {
   margin-top: 0;
   font-size: 1.2em;
   color: #333;
 }
-
 aside label {
   display: block;
   margin-bottom: 0.4em;
   font-weight: bold;
   color: #333;
 }
-
 aside select, 
 aside input[type="text"], 
 aside input[type="range"] {
@@ -134,14 +137,15 @@ aside input[type="range"] {
   box-sizing: border-box;
 }
 
-/* Animación aparición de productos */
+/* ANIMACIÓN DE ENTRADA */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* HERO / BANNER */
 .hero-home {
-  background-image: url('../img/banner.jpg'); /* Fondo de la cabecera */
+  background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -151,16 +155,14 @@ aside input[type="range"] {
   justify-content: center;
   margin-bottom: 3em;
 }
-
 .hero-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro más opaco */
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .hero-content {
   color: white;
   text-align: center;
@@ -170,12 +172,12 @@ aside input[type="range"] {
 .hero-content h1 {
   font-size: 3.5em;
   margin-bottom: 0.4em;
-  color: white; /* Aseguramos que el título sea blanco */
+  color: white;
 }
 .hero-content p {
   font-size: 1.5em;
   margin-bottom: 1.5em;
-  color: #dddddd; /* Texto más clarito debajo */
+  color: #dddddd;
 }
 .btn-hero {
   background: #f0b400;
@@ -191,8 +193,7 @@ aside input[type="range"] {
   background: #ffcc00;
 }
 
-
-/* Grid de categorías con imagen */
+/* CATEGORÍAS */
 .grid-categorias-img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -201,7 +202,6 @@ aside input[type="range"] {
   padding: 0 2em;
   justify-items: center;
 }
-
 .category-img {
   background: white;
   width: 220px;
@@ -221,18 +221,26 @@ aside input[type="range"] {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
 .category-img img {
   width: 100%;
   height: 140px;
-  object-fit: contain; /* QUE NO SE CORTE NI DEFORME */
+  object-fit: contain;
   margin-bottom: 10px;
 }
-
 .category-img span {
   display: block;
   font-weight: bold;
   color: #111;
   font-size: 1.05em;
   margin-top: 0.5em;
+}
+
+/* 📌 AJUSTE PARA FOOTER SIEMPRE ABAJO SIN ROMPER DISEÑO */
+.body-footer-fijo {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.body-footer-fijo main {
+  flex: 1;
 }
