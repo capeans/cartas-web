@@ -61,6 +61,13 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
+.producto p strong {
+  color: #111;
+}
+.producto p {
+  margin: 0.4em 0;
+}
+
 /* FORMULARIOS */
 input, textarea {
   width: 100%;
