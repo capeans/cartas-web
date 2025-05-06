@@ -26,6 +26,7 @@ nav a:hover {
 }
 main {
   padding: 2em;
+  flex: 1; /* <- Esta línea nueva hace que el contenido empuje el footer hacia abajo */
 }
 h1, h2 {
   color: #222;
