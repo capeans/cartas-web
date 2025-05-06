@@ -1,13 +1,9 @@
-html, body {
-  height: 100%;
+body {
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
 }
-
 header {
   background-color: #111;
   color: white;
@@ -28,22 +24,17 @@ nav a {
 nav a:hover {
   color: #f0b400;
 }
-
 main {
   padding: 2em;
-  flex: 1;
 }
-
 h1, h2 {
   color: #222;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1.5em;
 }
-
 .producto {
   border: 1px solid #ddd;
   background: white;
@@ -63,7 +54,6 @@ h1, h2 {
   object-fit: contain;
   margin-bottom: 10px;
 }
-
 input, textarea {
   width: 100%;
   max-width: 500px;
@@ -83,15 +73,13 @@ form button {
 form button:hover {
   background: #f0b400;
 }
-
 footer {
   text-align: center;
   padding: 2em;
   background: #222;
   color: white;
-  margin-top: auto;
+  margin-top: auto; /* Esto lo fuerza al final del layout flex */
 }
-
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -148,9 +136,8 @@ aside input[type="range"] {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* HERO CON FONDO E IMAGEN DETRÁS */
 .hero-home {
-  background-image: url('../img/banner.jpg');
+  background-image: url('../img/banner.jpg'); /* Fondo de la cabecera */
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -164,7 +151,7 @@ aside input[type="range"] {
 .hero-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro más opaco */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,12 +166,12 @@ aside input[type="range"] {
 .hero-content h1 {
   font-size: 3.5em;
   margin-bottom: 0.4em;
-  color: white;
+  color: white; /* Aseguramos que el título sea blanco */
 }
 .hero-content p {
   font-size: 1.5em;
   margin-bottom: 1.5em;
-  color: #dddddd;
+  color: #dddddd; /* Texto más clarito debajo */
 }
 .btn-hero {
   background: #f0b400;
@@ -199,6 +186,7 @@ aside input[type="range"] {
 .btn-hero:hover {
   background: #ffcc00;
 }
+
 
 /* Grid de categorías con imagen */
 .grid-categorias-img {
@@ -229,12 +217,14 @@ aside input[type="range"] {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
 .category-img img {
   width: 100%;
   height: 140px;
-  object-fit: contain;
+  object-fit: contain; /* QUE NO SE CORTE NI DEFORME */
   margin-bottom: 10px;
 }
+
 .category-img span {
   display: block;
   font-weight: bold;
