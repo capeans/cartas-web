@@ -86,25 +86,28 @@ function abrirImagenGrande(src) {
   overlay.style.left = 0;
   overlay.style.width = "100vw";
   overlay.style.height = "100vh";
-  overlay.style.background = "rgba(0,0,0,0.8)";
+  overlay.style.background = "rgba(0,0,0,0.85)";
   overlay.style.display = "flex";
   overlay.style.alignItems = "center";
   overlay.style.justifyContent = "center";
   overlay.style.zIndex = 1000;
   overlay.style.padding = "2em";
   overlay.innerHTML = `
-    <div style="display: flex; gap: 2em; align-items: center; max-width: 90vw; flex-wrap: wrap;">
-      <img src="${src}" style="max-width: 400px; max-height: 80vh; border-radius: 10px;">
-      <div style="color: white; max-width: 400px;">
+    <div style="display: flex; gap: 2em; align-items: flex-start; max-width: 90vw; background: white; border-radius: 12px; padding: 2em;">
+      <img src="${src}" style="width: 400px; height: 400px; object-fit: contain; border-radius: 12px; background: #f4f4f4;">
+      <div style="color: #111; max-width: 400px;">
         <h2 style="margin-top: 0;">${producto.nombre}</h2>
         <p><strong>Categoría:</strong> ${producto.categoria}</p>
         <p><strong>Idioma:</strong> ${producto.idioma}</p>
         <p><strong>Precio:</strong> ${producto.precio}€</p>
         <p><strong>Stock:</strong> ${producto.stock > 0 ? 'Disponible' : 'Agotado'}</p>
         <p><strong>Abrir en directo:</strong> ${producto.abrirEnDirecto ? 'Sí' : 'No'}</p>
+        <hr>
+        <p>${producto.descripcion || 'Sin descripción disponible.'}</p>
       </div>
     </div>
   `;
   overlay.addEventListener("click", () => document.body.removeChild(overlay));
   document.body.appendChild(overlay);
 }
+
