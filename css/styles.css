@@ -97,23 +97,32 @@ aside {
   box-shadow: 0 0 8px rgba(0,0,0,0.08);
   width: 260px;
   font-size: 0.95em;
+  box-sizing: border-box;
 }
+
+aside * {
+  box-sizing: border-box;
+}
+
 aside h3 {
   margin-top: 0;
   font-size: 1.2em;
   color: #333;
 }
-aside label, aside select, aside input {
+
+aside label, 
+aside select, 
+aside input[type="text"], 
+aside input[type="range"] {
   display: block;
   width: 100%;
   margin-bottom: 1em;
-}
-aside select, aside input[type="text"], aside input[type="range"] {
   padding: 0.5em;
+  font-size: 0.95em;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 0.95em;
 }
+
 
 /* Animación aparición de productos */
 @keyframes fadeIn {
