@@ -1,57 +1,66 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<link href="img/logo.png" rel="icon" type="image/png"/>
-<title>UZUTCG - Cartas Coleccionables</title>
-<link href="css/styles.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>UZUTCG - Cartas Coleccionables</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="body-footer-fijo">
-<header>
-<img alt="Uzutcg Logo" src="img/logo.png" style="height:40px;"/>
-<nav>
-<a href="index.html">Inicio</a>
-<a href="cajas.html">Cajas</a>
-<a href="cartas.html">Cartas</a>
-<a href="nosotros.html">Nosotros</a>
-<a href="contacto.html">Contacto</a>
-</nav>
-</header>
-<!-- SECCIÓN HERO -->
-<section class="hero-home">
-<div class="hero-overlay">
-<div class="hero-content">
-<h1>Cartas Únicas</h1>
-<p>Contacta con nosotros aquí</p>
-<a class="btn-hero" href="contacto.html">Ir a contacto</a>
-</div>
-</div>
-</section>
-<!-- CATEGORÍAS CON IMAGEN -->
-<main>
-<h2 style="text-align: center; margin-top: 2em;">Categorías Populares</h2>
-<div class="carousel-container"><button class="carousel-btn left">❮</button><div class="carousel-track"><div class="category-img" onclick="window.location.href='todo.html?categoria=pokemon'">
-<img alt="Pokémon" src="img/fondos/pokemon.png"/>
-<span>Pokémon</span>
-</div><div class="category-img" onclick="window.location.href='todo.html?categoria=one-piece'">
-<img alt="One Piece" src="img/fondos/onePiece.png"/>
-<span>One Piece</span>
-</div><div class="category-img" onclick="window.location.href='todo.html?categoria=yugioh'">
-<img alt="Yu-Gi-Oh" src="img/fondos/yugioh.png"/>
-<span>Yu-Gi-Oh</span>
-</div><div class="category-img" onclick="window.location.href='todo.html?categoria=digimon'">
-<img alt="Digimon" src="img/fondos/digimon.png"/>
-<span>Digimon</span>
-</div><div class="category-img" onclick="window.location.href='todo.html?categoria=dragon-ball'">
-<img alt="Dragon Ball" src="img/fondos/dragonBall.png"/>
-<span>Dragon Ball</span>
-</div><div class="category-img" onclick="window.location.href='todo.html?categoria=otros'">
-<img alt="Otros" src="img/fondos/otros.png"/>
-<span>Otros</span>
-</div></div><button class="carousel-btn right">❯</button></div>
-</main>
-<footer>
+  <header>
+    <img src="img/logo.png" alt="Uzutcg Logo" style="height:40px;">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="cajas.html">Cajas</a>
+      <a href="cartas.html">Cartas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero-home">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Cartas Únicas</h1>
+        <p>Contacta con nosotros aquí</p>
+        <a href="contacto.html" class="btn-hero">Ir a contacto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS CON IMAGEN -->
+  <main>
+    <h2 style="text-align: center; margin-top: 2em;">Categorías Populares</h2>
+    <div class="grid-categorias-img">
+      <div class="category-img" onclick="window.location.href='todo.html?categoria=pokemon'">
+        <img src="img/fondos/pokemon.png" alt="Pokémon">
+        <span>Pokémon</span>
+      </div>
+      <div class="category-img" onclick="window.location.href='todo.html?categoria=one-piece'">
+        <img src="img/fondos/onePiece.png" alt="One Piece">
+        <span>One Piece</span>
+      </div>
+      <div class="category-img" onclick="window.location.href='todo.html?categoria=yugioh'">
+        <img src="img/fondos/yugioh.png" alt="Yu-Gi-Oh">
+        <span>Yu-Gi-Oh</span>
+      </div>
+      <div class="category-img" onclick="window.location.href='todo.html?categoria=digimon'">
+        <img src="img/fondos/digimon.png" alt="Digimon">
+        <span>Digimon</span>
+      </div>
+      <div class="category-img" onclick="window.location.href='todo.html?categoria=dragon-ball'">
+        <img src="img/fondos/dragonBall.png" alt="Dragon Ball">
+        <span>Dragon Ball</span>
+      </div>
+      <div class="category-img" onclick="window.location.href='todo.html?categoria=otros'">
+        <img src="img/fondos/otros.png" alt="Otros">
+        <span>Otros</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
     © 2025 Uzutcg - Todos los derechos reservados
   </footer>
 </body>
